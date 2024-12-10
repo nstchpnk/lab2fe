@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Купівля картин</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <header class="header">
+          <div class="logo" >ART GALLERY</div>
+          <div class="search-container">
+            <input type="text" class="search-input" placeholder="Пошук картин..." style="font-size: 18px;">
+            <div class="search-icon" style="font-size: 22px; color: #ffffff;">🔍</div>
+          </div>
+          <button class="cart-button" style="font-size: 18px;">Кошик</button>
+        </header>
+
+        <div class="main-container">
+            <nav class="left-nav">
+                <ul>
+                    <li>КАТАЛОГ</li>
+                    <li>Пейзажі</li>
+                    <li>Абстракції</li>
+                    <li>Портрети</li>
+                </ul>
+            </nav>
+
+            <main class="gallery">
+                <form class="artwork-card" action="/cart/add" method="post">
+                    <div class="artwork-image" style="background-image: url('images/flowers-by-the-fence.jpg');"></div>
+                    <div class="artwork-info">
+                        <div class="artwork-details">
+                            <h3 class="artwork-title">Квіти біля паркану</h3>
+                            <div class="artwork-price">UAH 1200</div>
+                        </div>
+                        <input type="hidden" name="artwork_id" value="1">
+                        <button class="buy-button" type="submit">Купити</button>
+                    </div>
+                </form>
+
+
+                <form class="artwork-card" action="/cart/add" method="post">
+                    <div class="artwork-image" style="background-image: url('images/still-life-breakfast.jpg');"></div>
+                    <div class="artwork-info">
+                        <div class="artwork-details">
+                            <h3 class="artwork-title">Натюрморт зі сніданком</h3>
+                            <div class="artwork-price">UAH 1500</div>
+                        </div>
+                        <input type="hidden" name="artwork_id" value="2">
+                        <button class="buy-button" type="submit">Купити</button>
+                    </div>
+                </form>
+
+                <form class="artwork-card" action="/cart/add" method="post">
+                    <div class="artwork-image" style="background-image: url('images/still-life-watermelon-carrots-flowers.jpg');"></div>
+                    <div class="artwork-info">
+                        <div class="artwork-details">
+                            <h3 class="artwork-title">Кавун, морква, квіти</h3>
+                            <div class="artwork-price">UAH 2000</div>
+                        </div>
+                        <input type="hidden" name="artwork_id" value="3">
+                        <button class="buy-button" type="submit">Купити</button>
+                    </div>
+                </form>
+
+                <form class="artwork-card" action="/cart/add" method="post">
+                    <div class="artwork-image" style="background-image: url('images/apples-of-bogdanivka.jpg');"></div>
+                    <div class="artwork-info">
+                        <div class="artwork-details">
+                            <h3 class="artwork-title">Богданівські яблука</h3>
+                            <div class="artwork-price">UAH 1800</div>
+                        </div>
+                        <input type="hidden" name="artwork_id" value="4">
+                        <button class="buy-button" type="submit">Купити</button>
+                    </div>
+                </form>
+
+                <form class="artwork-card" action="/cart/add" method="post">
+                    <div class="artwork-image" style="background-image: url('images/catkin.jpg');"></div>
+                    <div class="artwork-info">
+                        <div class="artwork-details">
+                            <h3 class="artwork-title">Котики</h3>
+                            <div class="artwork-price">UAH 1300</div>
+                        </div>
+                        <input type="hidden" name="artwork_id" value="5">
+                        <button class="buy-button" type="submit">Купити</button>
+                    </div>
+                </form>
+
+                <form class="artwork-card" action="/cart/add" method="post">
+                    <div class="artwork-image" style="background-image: url('images/irises.jpg');"></div>
+                    <div class="artwork-info">
+                        <div class="artwork-details">
+                            <h3 class="artwork-title">Іриси</h3>
+                            <div class="artwork-price">UAH 2200</div>
+                        </div>
+                        <input type="hidden" name="artwork_id" value="6">
+                        <button class="buy-button" type="submit">Купити</button>
+                    </div>
+                </form>
+
+                <form class="artwork-card" action="/cart/add" method="post">
+                    <div class="artwork-image" style="background-image: url('images/bouquet-of-flowers.jpg');"></div>
+                    <div class="artwork-info">
+                        <div class="artwork-details">
+                            <h3 class="artwork-title">Букет квітів</h3>
+                            <div class="artwork-price">UAH 1700</div>
+                        </div>
+                        <input type="hidden" name="artwork_id" value="7">
+                        <button class="buy-button" type="submit">Купити</button>
+                    </div>
+                </form>
+
+                <form class="artwork-card" action="/cart/add" method="post">
+                    <div class="artwork-image" style="background-image: url('images/dahlias.jpg');"></div>
+                    <div class="artwork-info">
+                        <div class="artwork-details">
+                            <h3 class="artwork-title">Жоржини</h3>
+                            <div class="artwork-price">UAH 1900</div>
+                        </div>
+                        <input type="hidden" name="artwork_id" value="8">
+                        <button class="buy-button" type="submit">Купити</button>
+                    </div>
+                </form>
+
+                <form class="artwork-card" action="/cart/add" method="post">
+                    <div class="artwork-image" style="background-image: url('images/hilma-af-klint-svanen.jpg');"></div>
+                    <div class="artwork-info">
+                        <div class="artwork-details">
+                            <h3 class="artwork-title">The Swan (No. 17)</h3>
+                            <div class="artwork-price">UAH 2100</div>
+                        </div>
+                        <input type="hidden" name="artwork_id" value="9">
+                        <button class="buy-button" type="submit">Купити</button>
+                    </div>
+                </form>
+
+                <form class="artwork-card" action="/cart/add" method="post">
+                    <div class="artwork-image" style="background-image: url('images/chaos-nr.jpg');"></div>
+                    <div class="artwork-info">
+                        <div class="artwork-details">
+                            <h3 class="artwork-title">Chaos, Nr. 2</h3>
+                            <div class="artwork-price">UAH 1600</div>
+                        </div>
+                        <input type="hidden" name="artwork_id" value="10">
+                        <button class="buy-button" type="submit">Купити</button>
+                    </div>
+                </form>
+
+                <form class="artwork-card" action="/cart/add" method="post">
+                    <div class="artwork-image" style="background-image: url('images/what-a-human-being-is.jpg');"></div>
+                    <div class="artwork-info">
+                        <div class="artwork-details">
+                            <h3 class="artwork-title">What a Human Being Is</h3>
+                            <div class="artwork-price">UAH 2300</div>
+                        </div>
+                        <input type="hidden" name="artwork_id" value="11">
+                        <button class="buy-button" type="submit">Купити</button>
+                    </div>
+                </form>
+
+                <form class="artwork-card" action="/cart/add" method="post">
+                    <div class="artwork-image" style="background-image: url('images/series-vii-no-7d.jpg');"></div>
+                    <div class="artwork-info">
+                        <div class="artwork-details">
+                            <h3 class="artwork-title">Series VII, No. 7d</h3>
+                            <div class="artwork-price">UAH 2000</div>
+                        </div>
+                        <input type="hidden" name="artwork_id" value="12">
+                        <button class="buy-button" type="submit">Купити</button>
+                    </div>
+                </form>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

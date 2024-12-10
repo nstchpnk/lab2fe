@@ -1,0 +1,210 @@
+:root
+    --primary-color #e0e0e0
+    --secondary-color #bdc3c7
+    --border-color #34495e
+    --background-color #34495e
+    --spacing-unit 1rem
+    --container-width 1200px
+    --border-radius 12px
+    --transition-duration 0.3s
+
+*
+    margin 0
+    padding 0
+    box-sizing border-box
+
+body
+    font-family 'Arial', sans-serif
+    line-height 1.6
+    color var(--primary-color)
+    background-color #2c3e50
+
+.page-container
+    min-height 100vh
+    display flex
+    flex-direction column
+    background-color #2c3e50
+    max-width 1200px
+    margin 0 auto
+    padding 20px
+
+.container
+    max-width var(--container-width)
+    margin 0 auto
+    padding 0 var(--spacing-unit)
+    width 100%
+
+.site-header
+    background-color transparent
+    padding 0
+    box-shadow none
+    margin-bottom calc(var(--spacing-unit) * 3)
+
+.site-header .container
+    display flex
+    justify-content center
+    align-items center
+    padding 2rem 1rem
+
+.logo
+    display inline-block
+    padding 12px 35px
+    color white
+    font-family 'Arial', sans-serif
+    font-size 1.2rem
+    font-weight bold
+    letter-spacing 2px
+    border 2px solid white
+    text-align center
+
+.site-main
+    flex 1
+    background-color #2c3e50
+    padding-top var(--spacing-unit)
+
+.content-grid
+    display grid
+    grid-template-columns 1fr 320px
+    gap calc(var(--spacing-unit) * 3)
+
+.post-card
+    display flex
+    flex-direction row
+    align-items center
+    background-color var(--background-color)
+    border-radius var(--border-radius)
+    overflow hidden
+    box-shadow 0 4px 6px rgba(0, 0, 0, 0.05)
+    margin-bottom calc(var(--spacing-unit) * 2.5)
+    transition all var(--transition-duration) ease-in-out
+
+.post-card:hover
+    transform translateY(-4px)
+    box-shadow 0 8px 12px rgba(0, 0, 0, 0.1)
+
+.post-image img
+    width 100%
+    max-width 400px
+    height auto
+    border-radius var(--border-radius)
+    object-fit cover
+    margin 0 auto
+    display block
+    margin-left 15px
+
+.image-placeholder
+    width 100%
+    height 100%
+    aspect-ratio 1
+    background-color var(--secondary-color)
+    display flex
+    justify-content center
+    align-items center
+
+.post-content
+    flex 1
+    padding calc(var(--spacing-unit) * 2)
+
+.post-title
+    font-family 'Arial', sans-serif
+    font-size 1.75rem
+    font-weight bold
+    margin-bottom var(--spacing-unit)
+    color #fff
+    line-height 1.3
+
+.post-meta
+    font-size 0.875rem
+    color var(--secondary-color)
+    margin-bottom var(--spacing-unit)
+    display flex
+    gap 1rem
+    font-style italic
+
+.post-excerpt
+    color var(--secondary-color)
+    font-size 1rem
+    line-height 1.8
+
+.sidebar
+    position sticky
+    top var(--spacing-unit)
+
+.widget
+    background-color var(--background-color)
+    border-radius var(--border-radius)
+    padding calc(var(--spacing-unit) * 2)
+    margin-bottom calc(var(--spacing-unit) * 2)
+    box-shadow 0 4px 6px rgba(0, 0, 0, 0.05)
+    border 1px solid var(--border-color)
+
+.widget-title
+    font-family 'Arial', sans-serif
+    font-size 1.25rem
+    font-weight bold
+    margin-bottom var(--spacing-unit)
+    color #fff
+    padding-bottom 0.5rem
+    display inline-block
+
+.widget-content
+    font-size 0.9375rem
+    color var(--secondary-color)
+    line-height 1.7
+
+@media (max-width: 1024px)
+    .content-grid
+        gap calc(var(--spacing-unit) * 2)
+
+    .post-title
+        font-size 1.5rem
+
+@media (max-width: 768px)
+    .content-grid
+        grid-template-columns 1fr
+
+    .sidebar
+        position static
+
+    .post-card
+        flex-direction column
+        align-items stretch
+
+    .post-image
+        flex 0 0 auto
+        max-width 100%
+        margin 0 0 var(--spacing-unit) 0
+
+    .image-placeholder
+        aspect-ratio auto
+        width 100%
+
+    .widget
+        margin-bottom var(--spacing-unit)
+
+    .logo
+        font-size 1rem
+        padding 10px 25px
+
+    .site-header .container
+        padding 2rem 1rem
+
+@media (max-width: 480px)
+    :root
+        --spacing-unit 0.875rem
+
+    .post-title
+        font-size 1.25rem
+
+    .post-content
+        padding var(--spacing-unit)
+
+    .widget
+        padding var(--spacing-unit)
+
+    .logo
+        font-size 0.9rem
+        padding 8px 20px
+
+    .site-header .container
+        padding 1.5rem 1rem
